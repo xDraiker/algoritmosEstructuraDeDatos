@@ -3,7 +3,7 @@ let number=496;
 
 /* 
 * Funciones para determinar si un número es perfecto
-* No se toma en consideración number < 0 (Se debe añadir validación) 
+* No se toma en consideración number < 0 o si number es un número entero (Se debe añadir validaciones) 
 */
 function obtenerDivisores(n){
     let sumaDiv=0;

@@ -3,7 +3,7 @@ let number=1;
 
 /* 
 * Función para determinar si un número es primo o no 
-* No se toma en consideración number < 0 (Se debe añadir validación) 
+* No se toma en consideración number < 0 o si number es un número entero (Se debe añadir validaciones) 
 */
 function nPrimo(n){
     for(let i=1;i<=n;i++){
