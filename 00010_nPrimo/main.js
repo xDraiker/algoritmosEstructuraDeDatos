@@ -1,4 +1,5 @@
-let number=977;
+"use strict";
+let number=1;
 
 /* 
 * Función para determinar si un número es primo o no 
@@ -6,11 +7,11 @@ let number=977;
 */
 function nPrimo(n){
     for(let i=1;i<=n;i++){
-        if((n%i==0 && (i!=n && i!=1)) || (n==1)) return `${n} no es un número primo`;
+        if((n%i==0 && (i!=n && i!=1)) || (n==1)) return false;
+        if(i>(n/2)) return true;
     }
-    return `${n} es un número primo`;
 }
 
-console.log(nPrimo(number));
+console.log(nPrimo(number)? `${number} es un número primo`:`${number} no es un número primo`);
 
 
